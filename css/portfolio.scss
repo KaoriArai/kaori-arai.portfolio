@@ -116,43 +116,67 @@ header {
     // /#cover_area
 
 /* Main contents */
-    #newworks {
-        margin: 20px 0 20px 0;
-        
-        #item_container {
+
+    main {
+        .item_container {
             margin-top: 10px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        img {
-            width: calcWidth(10,3);;
+
+        #newworks {
+            margin: 20px 0 20px 0;
+            img {
+                width: calcWidth(10,3);
+            }
+            p { 
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: right;
+            }
         }
-        p { 
-            margin-top: 10px;
-            margin-bottom: 10px;
-            text-align: right;
+    
+        #newinfo {
+        }
+    
+        #monthlybest {
+            margin: 20px 0 20px 0;
+            padding: 10px 0 10px 0;
+            background-color: $red;
+            border-radius: 5px;
+            width: 100%;
+            h2 {
+                color: $basecolor;
+            }
+            .item_container{
+                padding: 0 10px;
+                margin: 0 10px 10px 10px;
+                .item_box {
+                    padding: 10px;
+                    text-align: center;
+                    width: calcWidth(10,3.5);
+                    background-color: $basecolor;
+                    img { width: 100%; }
+                    p {
+                        padding: 6px 0 10px 0;
+                        text-align: left;
+                    }
+                }
+            }
         }
     }
-    
-    #newinfo {
-        
-    }
-    
-    
-    
-    
 }
-
-
 
 
 
 
 /* FOOTER
 ---------------------------------------------*/
-#footer {
-    margin-top: 20px;
+footer {
+    background-color: $blue;
+    margin: 20px 0 20px 0;
+    padding: 10px 0;
     p {
         text-align: center;
         @include fontsize(10);

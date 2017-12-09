@@ -76,25 +76,48 @@ header {
       #page_contents #cover_area #cover_catch p {
         text-align: center;
         font-size: 24px; }
-  #page_contents #newworks {
+  #page_contents main .item_container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  #page_contents main #newworks {
     margin: 20px 0 20px 0; }
-    #page_contents #newworks #item_container {
-      margin-top: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-    #page_contents #newworks img {
+    #page_contents main #newworks img {
       width: calc((100% - 20px) / 3); }
-    #page_contents #newworks p {
+    #page_contents main #newworks p {
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: right; }
+  #page_contents main #monthlybest {
+    margin: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
+    background-color: #e16b8c;
+    border-radius: 5px;
+    width: 100%; }
+    #page_contents main #monthlybest h2 {
+      color: #fffff0; }
+    #page_contents main #monthlybest .item_container {
+      padding: 0 10px;
+      margin: 0 10px 10px 10px; }
+      #page_contents main #monthlybest .item_container .item_box {
+        padding: 10px;
+        text-align: center;
+        width: calc((100% - 25px) / 3.5);
+        background-color: #fffff0; }
+        #page_contents main #monthlybest .item_container .item_box img {
+          width: 100%; }
+        #page_contents main #monthlybest .item_container .item_box p {
+          padding: 6px 0 10px 0;
+          text-align: left; }
 
 /* FOOTER
 ---------------------------------------------*/
-#footer {
-  margin-top: 20px; }
-  #footer p {
+footer {
+  background-color: #7db9de;
+  margin: 20px 0 20px 0;
+  padding: 10px 0; }
+  footer p {
     text-align: center;
     font-size: 10px;
     font-size: 1rem; }
