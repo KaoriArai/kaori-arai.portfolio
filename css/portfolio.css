@@ -13,14 +13,13 @@ h2 {
   padding: 10px 0 10px 0;
   color: #e16b8c;
   font-weight: bold;
-  letter-spacing: 1.2rem;
   text-align: center;
   font-size: 24px;
   font-size: 2.4rem; }
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #4d260b; }
 
 body {
   background-color: #7db9de;
@@ -53,29 +52,35 @@ header {
   #page_contents #cover_area {
     margin-bottom: 20px;
     position: relative; }
-    #page_contents #cover_area img {
+    #page_contents #cover_area #cover img {
       width: 100%; }
-    #page_contents #cover_area .owl-dots {
+    #page_contents #cover_area #cover .owl-dots {
       text-align: left;
       margin-top: 0; }
-      #page_contents #cover_area .owl-dots .owl-dot span {
+      #page_contents #cover_area #cover .owl-dots .owl-dot span {
         height: 2px;
         width: 30px;
         margin-left: 0; }
         @media (max-width: 550px) {
-          #page_contents #cover_area .owl-dots .owl-dot span {
+          #page_contents #cover_area #cover .owl-dots .owl-dot span {
             width: 20px; } }
-      #page_contents #cover_area .owl-dots .owl-dot.active span {
+      #page_contents #cover_area #cover .owl-dots .owl-dot.active span {
         background-color: #e16b8c; }
     #page_contents #cover_area #cover_catch {
+      margin: 0;
+      padding: 0;
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-      #page_contents #cover_area #cover_catch p {
-        text-align: center;
-        font-size: 24px; }
+      z-index: 100;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold; }
   #page_contents main .item_container {
     margin-top: 10px;
     display: flex;
@@ -89,6 +94,48 @@ header {
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: right; }
+  #page_contents main #newinfo {
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    font-size: 1.2rem; }
+    #page_contents main #newinfo ul {
+      margin: 20px 0 10px 0; }
+      #page_contents main #newinfo ul li {
+        list-style-type: none; }
+        #page_contents main #newinfo ul li .date {
+          width: 60px;
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: top; }
+        #page_contents main #newinfo ul li .label-info {
+          width: 80px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 10px;
+          background-color: #7db9de;
+          text-align: center;
+          color: #fffff0; }
+        #page_contents main #newinfo ul li a {
+          width: 60%;
+          padding-top: 0;
+          display: inline-block;
+          vertical-align: top;
+          text-align: left; }
+    #page_contents main #newinfo .btn {
+      text-align: center; }
+      #page_contents main #newinfo .btn .top-btn {
+        width: 80px;
+        margin: 10px;
+        padding: 6px;
+        display: inline-block;
+        text-align: center;
+        background-color: #fffff0;
+        color: #4d260b;
+        border: 1.5px solid #7db9de;
+        border-radius: 5px; }
+        #page_contents main #newinfo .btn .top-btn:hover {
+          text-decoration: none;
+          background-color: #a6cfe8; }
   #page_contents main #monthlybest {
     margin: 20px 0 20px 0;
     padding: 10px 0 10px 0;

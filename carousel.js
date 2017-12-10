@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
     // 
-    $('#cover_area').owlCarousel(
+    $('#cover').owlCarousel(
         {
             loop: true,
             nav: false,
             dots:true,
             items: 1,
-            autoplay: false
+            autoplay: true
         }
     );
 
