@@ -44,26 +44,45 @@
 <header>
 <div class="container">
     <div class="row">
-        <div class="five columns pc_logo">
-            <img class="u-max-full-width" src="images/top/logo.png" alt="Medvěd" srcset="images/top/logo@2x.png 2x"/>
-        </div>
-        
-        <div class="seven columns pc_navi">
-            <nav class="">
+        <nav class="pc_navi">
+            <div class="five columns">
+                <img class="u-max-full-width" src="images/top/logo.png" alt="Medvěd" srcset="images/top/logo@2x.png 2x"/>
+            </div>
+            <div class="seven columns">
                 <ul class="main_navi">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">WORKS</a></li>
-                    <li><a href="#">SHOPPING</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./works.html">WORKS</a></li>
+                    <li><a href="./shopping.html">SHOPPING</a></li>
+                    <li><a href="./blogindex.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
                 <ul class="sns_navi">
                     <li class="icon_fb"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                     <li class="icon_tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     <li class="icon_ins"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        
+        <nav class="sp_navi">
+            <div class="twelve columns logo">
+                <img class="u-max-full-width" src="images/top/logo.png" alt="Medvěd" srcset="images/top/logo@2x.png 2x"/>
+            </div>
+            <ul class="sns_navi">
+                <li class="icon_fb"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="icon_tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="icon_ins"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="main_navi_hang">
+
+                <li><a href="./about.html"><img src="images/top/01_about.svg" alt="about"></a></li>
+                <li><a href="./works.html"><img src="images/top/02_works.svg" alt="works"></a></li>
+                <li><a href="./shopping.html"><img src="images/top/03_shopping.svg" alt="shopping"></a></li>
+                <li><a href="./blog.html"><img src="images/top/04_blog.svg" alt="blog"></a></li>
+                <li><a href="./contact.html"><img src="images/top/05_contact.svg" alt="contact"></a></li>
+            </ul>
+        </nav>
+
     </div> <!-- /.row-->
 </div> <!-- /.container-->
 </header>
@@ -83,7 +102,7 @@
 
 <div id="page_contents" class="container">
     <div class="row">
-    <!-- Main contents
+    <!-- Main contents(PC)
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <main class="nine columns">
 
@@ -170,11 +189,116 @@
             </div>
         </div> <!-- /.guide_container -->
     </section> <!-- /#shopping_guide -->
-    
     </main>
-    
+
+    <!-- Sidebar contents(PC)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
     <aside class="three columns">
         <section>
+            <h3>Sidebar</h3>
+        </section>
+    </aside>
+    
+    </div> <!-- /.row-->
+</div> <!-- /#page_contents .container-->
+
+
+<div id="page_contents_sp" class="container">
+    <div class="row">
+
+    <!-- Main contents(SP)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <main class="twelve columns">
+
+    <section id="display_container">
+        <div class="display_img">
+          <img class="u-max-full-width" src="./images/top/item_10.jpg" alt="" />
+        </div>
+        <ul class="list_img">
+            <li><img class="visible u-max-full-width" src="./images/top/item_10.jpg" alt="" /></li>
+            <li><img class="visible u-max-full-width" src="./images/top/item_11.jpg" alt="" /></li>
+            <li><img class="visible u-max-full-width" src="./images/top/item_12.jpg" alt="" /></li>
+            <li><img class="visible u-max-full-width" src="./images/works/work01.png" alt="" /></li>
+            <li><img class="visible u-max-full-width" src="./images/works/work02.png" alt="" /></li>
+            <li><img class="visible u-max-full-width" src="./images/works/work03.png" alt="" /></li>
+            <li><img class="visible u-max-full-width" src="./images/works/work04.png" alt="" /></li>
+            <li><img class="u-max-full-width" src="./images/works/gray_pro_img.jpg" alt="" /></li>
+            <li><img class="u-max-full-width" src="./images/works/gray_pro_img.jpg" alt="" /></li>
+            <li><img class="u-max-full-width" src="./images/works/gray_pro_img.jpg" alt="" /></li>
+        </ul>
+    </section>
+
+    <section id="product_description">
+        <h3>商品説明</h3>
+        <p>
+        説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+        説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+        説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+      </p>
+    </section> <!-- product_description -->    
+    
+    <section id="shopping_box">
+        <div class="color">
+            <h3>COLOR</h3>
+            <table class="color_check">
+                <thead>
+                    <tr>
+                        <th>Brown</th>
+                        <th>White</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="radio" name="radio_check"/></td>
+                        <td><input type="radio" name="radio_check" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <table class="form_wrapper">
+            <tr class="price_data">
+                <th><h3>価格</h3></th>
+                <td><p><span class="praice_num">￥1,000</span>(tax in)</p></td>
+            </tr>
+            <tr class="quantity_data">
+                <th><h3>個数</h3></th>
+                <td><input type="text" name="quantity" class="quantity_box"></td>
+            </tr>
+        </table> <!-- /#form_wrapper -->
+        
+        <div class="cart_icon">
+            <img class="u-max-full-width" src="./images/shopping/btn_cart.png" alt="" />
+        </div>
+    </section> <!-- /#shopping_box -->
+    
+    <section id="shopping_guide">
+        <div class="guide_container">
+            <div class="guide_box">
+                <h3>お届けについて</h3>
+                <img class="u-max-full-width" src="./images/shopping/otodoke_banner.png" alt="" />
+                <p class="sub_title">■〇〇運輸</p>
+                <p>送料　¥000円</p>
+                <p class="sub_title">■ゆうパケット</p>
+                <p>ポスト投函となります。<br>日時指定不可</p>
+            </div>
+            <div class="guide_box">
+                <h3>決済について</h3>
+                <p class="sub_title">■カード決済</p>
+                <img class="u-max-full-width" src="./images/shopping/cards.png" alt="" />
+                <p class="sub_title">■代金引換</p>
+                <p>代引き手数料が別途かかります</p>
+                <p class="sub_title">■銀行振込</p>
+                <p>お振込手数料お客様負担。<br>ご入金後の発送となります。</p>
+            </div>
+        </div> <!-- /.guide_container -->
+    </section> <!-- /#shopping_guide -->
+    </main>
+
+    <!-- Sidebar contents(SP)
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->     
+    <aside class="twelve columns">
+        <section id="sidebar">
             <h3>Sidebar</h3>
         </section>
     </aside>

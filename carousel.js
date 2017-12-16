@@ -16,4 +16,8 @@ $(document).ready(function(){
         $(".display_img img").attr("src", img_src);
     });
 
+    $('#menu_icon').click(function(){
+        $('.main_navi_hang').slideToggle();
+    });
+    
 });
