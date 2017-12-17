@@ -87,6 +87,7 @@ header {
           color: #4d260b;
           font-size: 3rem; }
       header .sp_navi .main_navi_hang {
+        margin-bottom: 0;
         display: flex;
         justify-content: center;
         width: 100%;
