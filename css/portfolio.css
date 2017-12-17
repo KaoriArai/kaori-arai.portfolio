@@ -87,17 +87,24 @@ header {
           color: #4d260b;
           font-size: 3rem; }
       header .sp_navi .main_navi_hang {
-        display: block;
+        display: flex;
+        justify-content: center;
         width: 100%;
         position: fixed;
         left: 0;
         bottom: 2px;
-        z-index: 2000;
-        text-align: center;
-        padding: 0 auto; }
+        z-index: 2000; }
         header .sp_navi .main_navi_hang li {
-          display: inline-block;
-          list-style-type: none; } }
+          flex: 1;
+          margin: 0;
+          list-style-type: none; }
+          header .sp_navi .main_navi_hang li a {
+            display: block;
+            margin: 10px; }
+            header .sp_navi .main_navi_hang li a img {
+              display: block;
+              margin: auto;
+              max-width: 30px; } }
 
 /* Page contents(PC)
 ---------------------------------------------*/
@@ -234,14 +241,14 @@ header {
           text-align: left; }
       @media (max-width: 767px) {
         #page_contents main #monthlybest .item_container {
-          display: inline-block;
-          text-align: center; }
+          flex-wrap: wrap; }
           #page_contents main #monthlybest .item_container .sp_top {
             width: 100%;
             margin-bottom: 10px; }
           #page_contents main #monthlybest .item_container .sp_other {
             display: inline-block;
-            width: 40%; } }
+            box-sizing: border-box;
+            width: calc( 50% - 5px); } }
   #page_contents main #title_area {
     padding: 50px;
     margin: 10px 0;

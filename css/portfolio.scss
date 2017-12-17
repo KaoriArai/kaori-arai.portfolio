@@ -124,17 +124,26 @@ header {
                 }
             }
             .main_navi_hang {
-                display: block;
+                display: flex;
+                justify-content: center;
                 width: 100%;
                 position: fixed;
                 left: 0;
                 bottom: 2px;
                 z-index: 2000;
-                text-align: center;
-                padding: 0 auto;
                 li {
-                    display: inline-block;
+                    flex: 1;
+                    margin: 0;
                     list-style-type: none;
+                    a {
+                        display: block;
+                        margin: 10px;
+                        img {
+                            display: block;
+                            margin: auto;
+                            max-width: 30px;
+                        }
+                    }
                 }
             }
         }
@@ -318,15 +327,15 @@ main {
             }
             
             @media (max-width: 767px) {
-                display: inline-block;
-                text-align: center;
+                flex-wrap: wrap;
                 .sp_top {
                     width: 100%;
                     margin-bottom: 10px;
                 }
                 .sp_other {
                     display: inline-block;
-                    width: 40%;
+                    box-sizing: border-box;
+                    width: calc( 50% - 5px);
                 }
             }
         }
