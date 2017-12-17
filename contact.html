@@ -4,7 +4,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Medvěd | CONTACT</title>
+    <title>Medvěd</title>
     <meta name="description" content="ハンドメイド作品の紹介・販売サイトです。">
     <meta name="author" content="">
     <meta name="keywords" content="ハンドメイド, ぬいぐるみ, アクセサリー">
@@ -34,7 +34,7 @@
     
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 <body>
 <div class="innerframe">
@@ -46,7 +46,9 @@
     <div class="row">
         <nav class="pc_navi">
             <div class="five columns">
-                <img class="u-max-full-width" src="images/top/logo.png" alt="Medvěd" srcset="images/top/logo@2x.png 2x"/>
+                <a href="./index.html">
+                    <img class="u-max-full-width" src="./images/top/logo.png" alt="Medvěd" srcset="./images/top/logo@2x.png 2x"/>
+                </a>
             </div>
             <div class="seven columns">
                 <ul class="main_navi">
@@ -66,7 +68,9 @@
         
         <nav class="sp_navi">
             <div class="twelve columns logo">
-                <img class="u-max-full-width" src="images/top/logo.png" alt="Medvěd" srcset="images/top/logo@2x.png 2x"/>
+                <a href="./index.html">
+                    <img class="u-max-full-width" src="./images/top/logo.png" alt="Medvěd" srcset="./images/top/logo@2x.png 2x"/>
+                </a>
             </div>
             <ul class="sns_navi">
                 <li class="icon_fb"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -74,12 +78,11 @@
                 <li class="icon_ins"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
             <ul class="main_navi_hang">
-
-                <li><a href="./about.html"><img src="images/top/01_about.svg" alt="about"></a></li>
-                <li><a href="./works.html"><img src="images/top/02_works.svg" alt="works"></a></li>
-                <li><a href="./shopping.html"><img src="images/top/03_shopping.svg" alt="shopping"></a></li>
-                <li><a href="./blog.html"><img src="images/top/04_blog.svg" alt="blog"></a></li>
-                <li><a href="./contact.html"><img src="images/top/05_contact.svg" alt="contact"></a></li>
+                <li><a href="./about.html"><img src="./images/top/01_about.svg" alt="about">ABOUT</a></li>
+                <li><a href="./works.html"><img src="./images/top/02_works.svg" alt="works">WORKS</a></li>
+                <li><a href="./shopping.html"><img src="./images/top/03_shopping.svg" alt="shopping">SHOPPING</a></li>
+                <li><a href="./blogindex.html"><img src="./images/top/04_blog.svg" alt="blog">BLOG</a></li>
+                <li><a href="./contact.html"><img src="./images/top/05_contact.svg" alt="contact">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -105,7 +108,7 @@
                         メールをお送りいただくと、まず自動返信でメールを差し上げます。Medvědからのお返事はその後にお送りいたします。
                     </p>
                 </div>
-                <img class="u-max-full-width" src="images/about/about_img.jpg" alt="about image"/>
+                <img class="u-max-full-width" src="./images/about/about_img.jpg" alt="about image"/>
             </div>
         </section>
 
@@ -113,9 +116,9 @@
             <form action="cgi-bin/aaa.cgi" method="post">
             <ul>
                 <li>お名前</li>
-                <li><input type="text" name="name" size="50" maxlength="50"></li>
+                <li><input class="textarea" type="text" name="name" maxlength="50"></li>
                 <li>メールアドレス</li>
-                <li><input type="text" name="name" size="50" maxlength="100"><li>
+                <li><input class="textarea" type="text" name="name" maxlength="100"><li>
                     <ul id="btn_contact">
                         <li><input type="radio" name="gakunen" value="制作">制作のご依頼</li>
                         <li><input type="radio" name="gakunen" value="お問い合せ">お問い合せ</li>

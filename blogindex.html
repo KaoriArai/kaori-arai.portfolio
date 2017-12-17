@@ -4,7 +4,7 @@
     <!-- Basic Page Needs
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>Medvěd | BLOG</title>
+    <title>Medvěd</title>
     <meta name="description" content="ハンドメイド作品の紹介・販売サイトです。">
     <meta name="author" content="">
     <meta name="keywords" content="ハンドメイド, ぬいぐるみ, アクセサリー">
@@ -34,7 +34,7 @@
     
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
 </head>
 <body>
 <div class="innerframe">
@@ -44,26 +44,48 @@
 <header>
 <div class="container">
     <div class="row">
-        <div class="five columns pc_logo">
-            <img class="u-max-full-width" src="images/top/logo.png" alt="Medvěd" srcset="images/top/logo@2x.png 2x"/>
-        </div>
-        
-        <div class="seven columns pc_navi">
-            <nav class="">
+        <nav class="pc_navi">
+            <div class="five columns">
+                <a href="./index.html">
+                    <img class="u-max-full-width" src="./images/top/logo.png" alt="Medvěd" srcset="./images/top/logo@2x.png 2x"/>
+                </a>
+            </div>
+            <div class="seven columns">
                 <ul class="main_navi">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">WORKS</a></li>
-                    <li><a href="#">SHOPPING</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./works.html">WORKS</a></li>
+                    <li><a href="./shopping.html">SHOPPING</a></li>
+                    <li><a href="./blogindex.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
                 <ul class="sns_navi">
                     <li class="icon_fb"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                     <li class="icon_tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     <li class="icon_ins"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        
+        <nav class="sp_navi">
+            <div class="twelve columns logo">
+                <a href="./index.html">
+                    <img class="u-max-full-width" src="./images/top/logo.png" alt="Medvěd" srcset="./images/top/logo@2x.png 2x"/>
+                </a>
+            </div>
+            <ul class="sns_navi">
+                <li class="icon_fb"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li class="icon_tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="icon_ins"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul class="main_navi_hang">
+                <li><a href="./about.html"><img src="./images/top/01_about.svg" alt="about">ABOUT</a></li>
+                <li><a href="./works.html"><img src="./images/top/02_works.svg" alt="works">WORKS</a></li>
+                <li><a href="./shopping.html"><img src="./images/top/03_shopping.svg" alt="shopping">SHOPPING</a></li>
+                <li><a href="./blogindex.html"><img src="./images/top/04_blog.svg" alt="blog">BLOG</a></li>
+                <li><a href="./contact.html"><img src="./images/top/05_contact.svg" alt="contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
     </div> <!-- /.row-->
 </div> <!-- /.container-->
 </header>
@@ -95,10 +117,11 @@
             <div class="category">カテゴリー：作品</div>
           </div>
           <div class="blog-body">
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="text_index">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="eyecatch_photo">アイキャッチ画像</div>
           </div>
           <div class="blog-footer">
-            <a href="#">続きを見る</a>
+            <a href="./blog.html">続きを見る</a>
           </div>
         </div>
       </section>
@@ -110,7 +133,8 @@
             <div class="category">カテゴリー：作品</div>
           </div>
           <div class="blog-body">
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="text_index">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="eyecatch_photo">アイキャッチ画像</div>
           </div>
           <div class="blog-footer">
             <a href="#">続きを見る</a>
@@ -125,7 +149,8 @@
             <div class="category">カテゴリー：作品</div>
           </div>
           <div class="blog-body">
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="text_index">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <div class="eyecatch_photo">アイキャッチ画像</div>
           </div>
           <div class="blog-footer">
             <a href="#">続きを見る</a>
